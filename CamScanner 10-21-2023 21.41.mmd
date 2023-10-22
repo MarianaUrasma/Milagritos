@@ -1,0 +1,193 @@
+## Chapter 1 Identical Particles, Spin and Exclusion Principle
+
+### 13 Hamiltonian Functions with Transformation Groups, Angular Momentum and Spin1
+
+Footnote 1: On the relation between quantum mechanics and group theory there exist several detailed textbooks: H. Weyl, The Theory of Groups and Quantum Mechanics, Dover Publications, New York (1950); E.P. Wigner, Group Theory and Its Applications to the Quantum Mechanics of Atomic Spectra, Academic Press, New York (1959); B.L. van der Waerden, Die Gruppentheoretische Methode in der Quantenmechanik, Springer Verlag, Berlin (1932); W. Pauli, Continuous Groups in Quantum Mechanics, Mimeographed lectures, CERN-publications, (1956).* We make here a very rapid survey of the subject and refer the reader for all proof’s and details to these textbooks.
+
+* Now included as an article in Springer Tracts in Modern Physics, **37** (1965); See also the article. Group Theory and Spectroscopy by G. Racah in the same volume; M. Hamermesh: Group Theory and Its Applications to Physical Problems, Addison-Wesley, Reading; Mass., U.S.A. (1962).
+
+can be represented in the form
+
+\[v=\sum\limits_{\mathbf{a}}c_{\mathbf{a}}\,u_{\mathbf{a}}\,.\]
+
+The transformations \(T\) of the group, when applied to \(u_{1},\ldots,u_{\mathbf{a}}\), transform, therefore, this vector space _linearly_, such that to the sequence of two different transformations \(T\) corresponds the sequence of the associated linear mappings. In order to be in accord with the law of matrix multiplication, it is convenient to stipulate the following. If we carry out on the variables \(q\) of the function \(u(q)\) the transformation \(T_{1}\) defined by \(q^{\prime}=\int(q_{1},\ldots,q_{\mathbf{a}})\), then we associate this transformation of the variables \(q\) with an operator \(T\), which changes the function \(u(q_{1},\ldots q_{\mathbf{a}})\) to \(u(q_{1},\ldots q_{\mathbf{a}})\):
+
+\[T\,u\equiv u^{\prime}\,.\]
+
+Here \(u^{\prime}(q_{1}^{\prime}\ldots q_{\mathbf{a}}^{\prime})=u(q_{1},\ldots q_{ \mathbf{a}})\), so that
+
+\[u^{\prime}(T\,q)=u(q)\]
+
+or
+
+\[u^{\prime}(q)=u(T^{-1}\,q)\]
+
+Only in this case is the composition of two operators in the order, first \(T_{2}\) and then \(T_{1}\) next, associated with _the same_ sequence of transformation of the variables \(q\). In fact,
+
+\[T_{2}u(q)=u^{\prime}(q)=u(T_{2}^{-1}\,q)\]
+
+and if we replace \(q\) by \(T_{1}^{-1}q\), then we obtain
+
+\[(T_{1}T_{2})\,u=u^{\prime}(T_{1}^{-1}q)=u(T_{2}^{-1}T_{1}^{-1}q)=u\left((T_{1 }T_{2})^{-1}\,q\right)\,.\]
+
+In matrix form we have to set
+
+\[(T\,u)=\sum\limits_{\mathbf{a}=1}^{\mathbf{a}}u_{\mathbf{a}}\,c_{\mathbf{a} \,\mathbf{1}}\,. \tag{3.1}\]
+
+Then we have
+
+\[c_{\mathbf{a}\,\mathbf{1}}(T_{1}T_{2})=\sum\limits_{\mathbf{a}}c_{\mathbf{a} \,\mathbf{1}}\,(T_{1})\,c_{\mathbf{a}\,\mathbf{1}}(T_{2})\,, \tag{3.2}\]
+
+or in matrix form
+
+\[c(T_{1}T_{2})=c(T_{1})\,c(T_{2})\,. \tag{3.3}\]
+
+We then say that the associated linear mapping forms a _representation_ of the group. Naturally _different_ transformations of the group can correspond to the same linear mapping in the representation. If the Jacobian of the new variables \(q\)'s \(=f(q_{1},\ldots,q)\) which are defined by the transformation \(T\) has the value \(1\) with respect to the odd \(q\) and if further the \(q_{i}^{\prime}\) as well as the \(q_{\mathbf{a}}\) are real, it then follows, with
+
+\[v(q_{1},\ldots,q_{\mathbf{a}})=T\,v\left(f_{1}(q),f_{2}(q),\ldots f_{1}(q) \right)\,,\]
+
+that
+
+\[fv_{\mathbf{a}}^{\prime}v_{\mathbf{a}}\,q=\int(T\,v_{\mathbf{a}})^{\ast}\,(T \,v_{\mathbf{a}})\,\dot{q}\,.\]
+
+In this case the matrices \(c(T)\) are unitary for all \(T\); we also call the representation unitary. In this case a normalised orthogonal system will be transformed in normalised orthogonal system again.
+
+The concept of the _reduction_ of a representation is very important representation is said to be _reducible_, if an invariant sub-space of smaller dimension than the original representation-space exists. That is, for a suitable choice of the basis, the linearly independent functions \(u_{1}\), \(\ldots\), \(u_{g}\) (\(g<h\)) which form only a part of the complete basis \(u_{1}\), \(\ldots\)\(u_{g}\), transform into themselves under the transformation \(T\). The total matrix \(\boldsymbol{c}\left(\boldsymbol{T}\right)\) has for this choice of the basis, the form
+
+\[\boldsymbol{c}=\left(\begin{array}{cc}\boldsymbol{a}&\boldsymbol{r}\\ \boldsymbol{o}&\boldsymbol{b}\end{array}\right) \tag{13.3}\]
+
+where \(\boldsymbol{a}\) is \(g\)-dimensional and \(b\) is \((h-g)\)-dimensional. If there is no proper invariant subspace, the representation is said to be _irreducible_. A change of the basis means a transformation \(\boldsymbol{c}\,^{\prime}=\boldsymbol{S}\boldsymbol{c}\boldsymbol{S}^{-1}\) of the representation matrix. Two representations which are related in this way, are called equivalent. If \(\boldsymbol{c}\) is a unitary matrix, then from the form (13.3) of the matrix, it readily follows that by changing the basis, even \(\boldsymbol{r}\) can be made to vanish, i.e. the representation \(\boldsymbol{c}\) is _decomposable_. For a finite group it can be proved that every representation is equivalent to a unitary representation and that, therefore, every reducible representation is decomposable. This is not always the case for continuous groups, but is true only for a particular class of these groups, the semi-simple groups. The rotation group is one such group as well as the group of all linear transformations with determinant 1 (where the unimodularity is important). Since we have to do only with unitary representations in quantum mechanics, we need not go into the complications of the general case here.
+
+Thus every representation \((D)\) of a group decomposes into irreducible representations according to
+
+\[(D)=(D_{1})+(D_{2})+\cdots,\]
+
+and indeed it can be shown that this decomposition is unique. The degeneracy that corresponds to the order of the irreducible representation, which belongs to the energy eigenvalue \(E\), cannot be removed by a continuous change of the Hamiltonian so long as the latter is invariant under the group concerned (in contrast to the accidental degeneracy which corresponds to the higher order of a reducible representation). If we, however, alter the Hamiltonian such that it is only invariant under a sub-group of the original group, then under this smaller group the representation will in general be reducible. The change of the basis chosen in order to decompose the representation, which we can also call the reduction of the original representation with respect to the sub-group, corresponds, in general, to the splitting of the original energy value \(E\) into different eigenvalues, when a perturbation, which is invariant only under this sub-group is applied.
+
+From two representations \((D_{1})\) and \((D_{2})\) of degree \(h_{1}\) and \(h_{2}\) respectively, we can construct the product representation \((D_{1}\times D_{2})\) of degree \(h_{1}\) - \(h_{2}\) in the following way. From the basis \(u_{k}(k=1,\,2,\ldots,\,h_{1})\) of \((D_{1})\) and \(v_{i}(l=1,\,2,\ldots,\,h_{2})\) of \((D_{2})\) we build the \(h_{1}\) - \(h_{2}\) products \(u_{k}v_{l}\). If the \(u_{k}\) undergoes a linear transformation \(D_{1}\left(T\right)\) and \(v_{l}\) a linear transformation \(D_{2}\left(\boldsymbol{T}\right)\) then \(u_{k}\,v_{l}\) also undergoes a linear transformation and this will be defined as \((D_{1}\times D_{2})\). In particular we can take \((D_{1})=(D_{2})\). Naturally \((D_{1}\times D_{2})\) is reducible in general even if \((D_{1})\) and \((D_{2})\) are irreducible. By changing the basis of the \(h_{1}h_{2}\)-dimensional space we can, therefore, reduce \((D_{1}\times D_{2})\) in which the irreducible parts of \((D_{1})\) and \((D_{2})\) can be different. This direct product form of representation always occurs in the couplings of independent systems.
+
+For the continuous groups, the infinitesimal transformations which lie in the neighbourhood of the identity element are of special interest. For, these by themselves form a linear manifold - a vector space of as many dimensions as \(\mathfrak{h}_{k}\) group has independent parameters. (For the group of rotations in three-dimensional space the linear manifold is, therefore, a three-dimensional vector space.) In fact it follows from \(\boldsymbol{T}(0,\ldots,0)=1\) that
+
+\[\boldsymbol{T}(\mathfrak{e}_{1},\,\varepsilon_{2},\,\ldots,\,\varepsilon_{ \boldsymbol{r}})=1+\varepsilon_{1}\,\omega_{1}+\varepsilon_{2}\,\omega_{2}+ \cdots+\varepsilon_{r}\,\omega_{r}\,,\]
+
+if \(\boldsymbol{T}\) depends on \(\varepsilon\) continuously. The \(\omega_{1},\,\omega_{2},\ldots,\omega_{r}\) are, therefore, similar to the \(\boldsymbol{T}\) operators which act on the variables \(q\) of the eigenfunctions. The fact, that the transformations concerned generate a group, requires that the "commutator" \([\omega_{\boldsymbol{r}},\omega_{\boldsymbol{s}}]=\omega_{\boldsymbol{p}} \omega_{\boldsymbol{a}}-\omega_{\boldsymbol{a}}\omega_{\boldsymbol{p}}\) can be expressed in terms of the \(\omega\) themselves, with coefficients which are characteristic of the group concerned:
+
+\[[\omega_{\boldsymbol{p}},\,\omega_{\boldsymbol{r}}]=\sum_{s=1}^{r}c_{\, \varrho_{s}}\,\omega_{s}. \tag{13.4}\]
+
+These coefficients need satisfy only certain relations, which arise from the identity1
+
+Footnote 1: The \(\omega_{\boldsymbol{p}}\) is a linear manifold, and the \(\omega_{\boldsymbol{p}}\) is a linear manifold.
+
+\[[[\omega_{\boldsymbol{p}},\omega_{\boldsymbol{q}}]\,\omega_{\boldsymbol{r}}] +[[\omega_{\boldsymbol{q}},\omega_{\boldsymbol{r}}]\,\omega_{\boldsymbol{p}}] +[[\omega,\omega_{\boldsymbol{p}}]\,\omega_{\boldsymbol{q}}]\equiv 0\,.\]
+
+In the stipulation made above regarding the association of the operators acting on the eigenfunctions with the transformations of the variables, both (the transformations and the corresponding operators) obey the same C.R., and the two need not be distinguished from each other. The fact that the Hamiltonian is invariant under the group concerned is expressed by saying that \(\omega\) and \(\boldsymbol{H}\) commute:
+
+\[\omega_{\boldsymbol{p}}\boldsymbol{H}-\boldsymbol{H}\,\omega_{\boldsymbol{p} }=0\,.\]
+
+This is the case also for the operator \(\boldsymbol{T}\) of finite transformation. Equivalently we can say that the \(\omega_{\boldsymbol{p}}\), as matrices, are constant in time, i.e. they are integrals of the equations of motion. Up to a factor \(i\), the \(\omega_{\boldsymbol{p}}\) are Hermitian, if the operators \(\boldsymbol{T}\) are unitary (cf. Sec. 10). To every representation of the group belongs, in general, a system of matrices for the \(\omega_{\boldsymbol{k}}\) which satisfy the relation (13.4).
+
+As an illustration of the above statements, let us consider the group of translations which displaces the coordinates \(x_{\boldsymbol{k}}^{[\boldsymbol{a}]}\), \((k=1,\,2,\,3)\) by \(A_{\boldsymbol{k}}\)
+
+\[x_{\boldsymbol{k}}^{\boldsymbol{a}}=x_{\boldsymbol{k}}^{\boldsymbol{a}}+A_{ \boldsymbol{k}},\qquad(A_{\boldsymbol{1}},\,A_{\boldsymbol{2}},\,A_{ \boldsymbol{3}}\,\,\text{continuous parameters});\,\,\omega_{\boldsymbol{k}}= \sum_{\boldsymbol{a}}\frac{\boldsymbol{a}}{\partial x_{\boldsymbol{k}}^{ \boldsymbol{a}}}.\]
+
+This corresponds, up to a factor \(\hbar/i\), to the total momentum of the system. In fact, the invariance of the Hamiltonian under this group of transformations can be equivalently stated as follows: the potential energy depends only on the relative coordinates of the particle.
+
+We now proceed to consider the group of rotations of the space co-ordinates simultaneously for all particles of the system. Here we can employ two different methods. Either we start from the infinitesimal standpoint, find out the form of the operators \(\omega_{\boldsymbol{k}}\) belonging to the _infinitesimal_ rotations and, on the basis of their C.R., obtain the associated representation-matrices in a purely algebraic way; or, we try, using the method of analysis, to find the representations belonging to the finite rotations. Each method supplements the other. Let us begin with the first method.
+
+As the three independent infinitesimal rotations of the three-dimensional space, we choose the rotations about the co-ordinate axes
+
+\[\delta\mathbf{x}_{1}=0\,,\quad\quad\delta\mathbf{x}_{2}=-\,\mathbf{\varepsilon}_{1}\,\mathbf{x}_ {3},\quad\delta\mathbf{x}_{3}=+\,\mathbf{\varepsilon}_{1}\,\mathbf{x}_{2}, \tag{13.5}\]
+
+where the two remaining infinitesimal rotations are obtained by cyclical permutation. On the basis of an elementary kinematic consideration (limiting transition from finite to infinitesimal rotations), we obtain the C.R. characteristic of infinitesimal rotations:
+
+\[\mathbf{\omega}_{1}\mathbf{\omega}_{2}-\mathbf{\omega}_{4}\mathbf{\omega}_{1}=\mathbf{\omega}_{3} \,,\,\ldots, \tag{13.6}\]
+
+Here the operators \(\mathbf{\omega}\) or the corresponding linear mappings are so defined that, for example, the operator \(1+\mathbf{\varepsilon}_{1}\mathbf{\omega}_{1}\) corresponds to the transformation (13.5). These relations must then be satisfied by _all_ representations of the rotation group. Since we shall investigate also reflections of the space co-ordinates later, it is to be specially mentioned that the \(\mathbf{\omega}\) behave like an antisymmetric tensor and not like a vector under rotation. If we, therefore, write \(\mathbf{\omega}_{23}\), \(\mathbf{\omega}_{31}\), \(\mathbf{\omega}_{12}\) with \(\mathbf{\omega}_{ik}=-\mathbf{\omega}_{ik}\) instead of \(\mathbf{\omega}_{1}\), \(\mathbf{\omega}_{2}\), \(\mathbf{\omega}_{3}\), then (13.6) can be written as
+
+\[\mathbf{\omega}_{ik}\mathbf{\omega}_{i\,m}-\mathbf{\omega}_{1\,m}\,\mathbf{\omega}_{ik}=-\, \mathbf{\delta}_{ki}\mathbf{\omega}_{i\,m}-\mathbf{\delta}_{i\,m}\,\mathbf{\omega}_{ki}+\mathbf{ \delta}_{i\,m}\,\mathbf{\omega}_{i\,m}+\mathbf{\delta}_{i\,m}\,\mathbf{\omega}_{i\,m} \tag{13.6}\]
+
+(\(\mathbf{\delta}_{ik}=0\) for \(i\pm k\) and \(=\)1 for \(i=k\)). This form of C.R. for the infinitesimal rotations is also valid in an \(n\)-dimensional space. We shall make use of this property in the study of the Lorentz group later.
+
+According to our earlier requirement, to the infinitesimal rotation (13.5) belongs, for a single particle, the operator \(1+\mathbf{\varepsilon}\mathbf{\omega}_{1}\) (or \(1+\mathbf{\varepsilon}\mathbf{\omega}_{23}\)) which takes \(u(\mathbf{x}_{1}\,\mathbf{x}_{2}\,\mathbf{x}_{3})\) to \(u(\mathbf{x}_{1},\mathbf{x}_{2}+\mathbf{\varepsilon}\mathbf{x}_{3},\mathbf{x}_{3}-\mathbf{\varepsilon} \mathbf{x}_{2})\) and, therefore,
+
+\[\mathbf{\omega}_{1}\mathbf{u}=-\Big{(}\mathbf{x}_{1}\,\frac{\partial\mathbf{u}}{\partial\mathbf{x }_{2}}-\,\mathbf{x}_{3}\,\frac{\partial\mathbf{u}}{\partial\mathbf{x}_{2}}\Big{)}\,.\]
+
+In the many-particle case the co-ordinates of all the particles must be subject to the same rotation and so we obtain
+
+\[\mathbf{\omega}_{1}\mathbf{u}=-\sum_{r}\Big{(}\mathbf{x}_{1}^{r}\,\frac{\partial\mathbf{u}}{ \partial\mathbf{x}_{2}^{r}}-\mathbf{x}_{1}^{r}\,\frac{\partial\mathbf{u}}{\partial\mathbf{x} ^{r}}\Big{)}\,,\]
+
+where we have to sum over all the particles involved. Since the linear momentum \(p_{k}^{|r|}\) will be represented by the operator \(\frac{\hbar}{l}\,\frac{\partial}{\partial\mathbf{x}_{k}^{|r|}}\,\), the \(\mathbf{\omega}\) are connected to the total angular momentum
+
+\[\mathbf{P}_{1}=\sum_{r}\mathbf{x}_{2}^{(r)}\,\mathbf{p}_{3}^{(r)}-\mathbf{x}_{1}^{r}\mathbf{p}_{2 }^{(r)}=\frac{\hbar}{l}\sum_{r}\Big{(}\mathbf{x}_{2}^{(r)}\,\frac{\partial}{ \partial\mathbf{x}_{2}^{(r)}}-\,\mathbf{x}_{3}^{(r)}\,\frac{\partial}{\partial\mathbf{x} _{2}^{(r)}}\Big{)}\,, \tag{13.7}\]
+
+by the simple relation
+
+\[\mathbf{\omega}_{k}=-\,\frac{\imath}{\hbar}\,\mathbf{P}_{k}\,. \tag{13.8}\]
+
+Again we can verify that \(\mathbf{\omega}\) is \(i\) times a Hermitian operator. In fact it follows from the C.R. (5.21) for \(p_{k}\) and \(q_{k}\) that
+
+\[\mathbf{P}_{1}\mathbf{P}_{2}-\mathbf{P}_{2}\mathbf{P}_{1}=-\,\frac{n}{\hbar}\,\mathbf{P}_{3}\,. \tag{13.9}\]
+
+_It is, however, of importance here to show that the existence of the integrals of the three components of the angular momentum which, up to a pure imaginary factor, coincide with the operators \(\mathbf{\omega}\) belonging to infinitesimal rotation follows__independently from the C.R._ (5.21). _The C.R. of \(\omega\) themselves follow directly from \(n_{k}\) kinematics of the rotation group._ This statement holds also for the C.R.
+
+\[[\omega_{k},C]=0. \tag{13.10}\]
+
+for each scalar operator \(C\) and
+
+\[[\omega_{1},A_{2}]=-\ [\omega_{2},A_{1}]=A_{3}\,, \tag{13.11}\]
+
+\[[P_{1},A_{2}]=-\ [P_{1}\ \ A_{1}]=-\ \frac{\hbar}{i}A_{3} \tag{13.12}\]
+
+for the components of every vector operator \(\vec{A}\). Here it is assumed that \(C\) and \(\vec{A}\) are functions of \(p_{k}\) and \(q_{k}\) alone. It is to be noted that \(\vec{A}\) cannot be a \(c\)-number. These C.R. can be obtained from the general relations, (valid for finite rotations)
+
+\[T\,C=C\,T\quad\mbox{or}\quad\quad T\,C\,T^{-1}=C \tag{13.13}\]
+
+and
+
+\[TA_{k}^{\prime}=A_{k}\,T\quad\mbox{or}\quad\quad\quad\quad A_{k}^{\prime}=T^{ -1}A_{k}\,T \tag{13.14}\]
+
+by specialising to infinitesimal rotations. The first relation represents _invariance_ of \(C\)(as in the case of the Hamiltonian) and the second, the _covariance_ of \(A\) with respect to rotations. The existence of such a unitary transformation \(T\) follows from the fact that the totality of the \(A_{k}^{\prime}\) has the same eigenvalues and satisfies the same C.R. as the \(A_{k}\). We can verify that the equations (13.13) and (13.14) follow from eq. (13.7) and the fundamental C.R. (5.21). In particular these relations hold for \(A_{k}=p_{k}^{[n]}\) or \(A_{k}=q_{k}^{[n]}\). Further (13.10) holds for \(C=P^{2}=P_{1}^{2}+P_{2}^{2}+P_{3}^{2}\). Again
+
+\[P^{2}P_{k}-P_{k}P^{2}=0 \tag{13.15}\]
+
+follows directly from eq. (13.9). From this we infer that it is possible to bring \(P^{2}\) and one of the components \(P_{k}\) simultaneously into a diagonal form.
+
+It is easy to evaluate, by elementary algebraic methods, all finite Hermitian matrices, which obey the relations (13.9).2 If we bring \(P^{2}\) and \(P_{3}\) into diagonal form, we find the eigenvalues of \(P^{2}\) to be given by
+
+Footnote 2: Cf.e.g., M. Born and P. Jordan, Elementare Quantenmechanik, Springer Verlag, Berlin. (1930)
+
+\[P^{2}=\hbar^{2}j(j+1)\,, \tag{13.16}\]
+
+where \(j\) is either a non-negative integer (\(j=0\), \(1\), \(2\), \(\ldots\)) or exceeds it by \(\frac{1}{2}(j=\frac{1}{2}\), \(3/2\), \(\ldots\)). We can combine these into the statement that \(j\) can be half-integral. To a given eigenvalue of \(P^{2}\) belong \(2j+1\) different values of \(P_{3}\); namely
+
+\[P_{3}=\hbar\,m\quad\mbox{with}\quad-\,i\leq m\leq+j\,. \tag{13.17}\]
+
+where \(m\) changes in steps of unity and is half-integral or integral according as \(j\) is half-integral or integral. The matrix elements of \(P_{1}\) and \(P_{2}\), for fixed \(j\), are then
+
+\[\begin{array}{l}(P_{1}+iP_{2})_{=i1,m}=\hbar\,\big{|}\,\overline{j(j+1)-m(m+ 1)}=\hbar\,\big{|}\,\overline{j(j-m)\,(j+1+m)}\,,\\ (P_{1}-iP_{2})_{m,m+1}=(P_{1}+iP_{2})_{m+1,m}\,,\quad(P_{2})_{m,m}=m\,\hbar\, \big{|}\,\overline{j(j+1)-m(j+1+m)}\,,\end{array} \tag{13.18}\]
+
+All other matrix elements of \((P_{1}-iP_{2})\) and \((P_{1}+iP_{2})\) vanish. For every \(j\) the matrices (13.17) correspond to an irreducible representation of infinitesimal rotations.
+
+From (13.11) follows for every vector \(A\) (which does not depend on vectors with \(c\)-number components), and in particular for the co-ordinate matrices3
+
+Footnote 3: For the proof, cf., e.g., M. Born and P. Jordan, Elementare Quantenmechanik, Berlin (1930), P.A.M. Dirac, Quantenmechanik, Leipzig (1930)* See also LD. Landau and E.M. Lifschitz, Quantum Mechanics, Pergamon Press, London (1958).
+
+\[\begin{array}{l}(A_{1}+i\,A_{2})_{j+1,\,m+1\,;j\,m}=-\,A_{j+1,\,j}/(\bar{i+m+2 })\,(\bar{i+m+1})\,,\\ (A_{1}-i\,A_{2})_{j+1,\,m-1,\,;j\,m}=\quad A_{j+1,\,j}/(\bar{i-m+2})\,(\bar{i-m+ 4})\,,\\ (A_{3})_{j+1,\,m,\,;j,m}=\quad A_{j+1,\,j}/(\bar{i+m+1})\,(\bar{i-m+4})\,,\end{array} \tag{13.18a}\] \[\begin{array}{l}(A_{1}+i\,A_{2})_{j,\,m+1\,;j\,m}=A_{j,\,j}/(\bar{i+m+1})\,( \bar{i-m})\,,\\ (A_{1}-i\,A_{2})_{j,\,m-1\,;j\,m}=A_{j,\,j}/(\bar{i+m})\,(\bar{i-m+4})\,,\\ (A_{3})_{j,\,m+1\,;j,m}=A_{j,\,j}/(\bar{i+m})\,(\bar{i-m+4})\,,\end{array}\] (13.18b) \[\begin{array}{l}(A_{1}+i\,A_{2})_{j-1,\,m+1\,;j\,m}=A_{j-1,\,j}/(\bar{j-m}) \,(\bar{j-m-1})\,,\\ (A_{1}-i\,A_{2})_{j-1,\,m-1\,;j\,m}=-\,A_{j-1,\,j}/(\bar{i+m})\,(\bar{i+m})\,,\\ (A_{3})_{j-1,\,m+1\,;j\,m}=A_{j-1,\,j}/(\bar{i+m})\,(\bar{j-m})\,.\end{array} \tag{13.18c}\]
+
+The matrix elements vanish for all other pairs of values of \((j,m)\) in the initial and final states. These give the selection and intensity rules for \(j\) and \(m\).
+
+Finally we shall add a remark on the composition of two systems with angular momenta \(j_{1}\) and \(j_{2}\). We imagine that the corresponding operators \(P_{3}^{[11]}\) and \(P_{3}^{[2]}\) with the eigenvalues \(m_{1}\) and \(m_{2}\) which run over the values \(-j_{1}\) to \(j_{1}\) and from \(-j_{2}\) to \(j_{2}\) respectively, are diagonalised simultaneously. We now form the total angular momentum \(P_{r}=P_{r}^{[11]}+P_{r}^{[2]}\), and its square \(P^{2}=\sum\limits_{k=1}^{3}P_{r}^{k}\). The operator \(P_{3}\) is already in the diagonal form and the eigenvalues are given by
+
+\[m=m_{1}+m_{2}\]
+
+which occurs as often as there are appropriate numbers in \((-j_{1},+j_{1})\) and \((-j_{2},+j_{2})\). If we set \(j_{1}\geqslant j_{2}\), we find the number of \(m\)-values \(Z(m)\) to be given by:
+
+\[\begin{array}{l}j_{1}-j_{2}\leq m\leq j_{1}+j_{2},\qquad\qquad Z(m)=j_{1}+j_ {2}-m+1,\\ -(j_{1}-j_{2})\leq m\leq j_{1}-j_{2},\qquad Z(m)=2j_{1}+1,\\ -(j_{1}+j_{2})\leq m\leq-(j_{1}-j_{2}).\end{array}\]
+
+If we now bring \(P^{\,2}\) to diagonal form,4 for each \(m\) instead of for each \(m_{1}\) and \(m_{2}\) separately, then we obtain a series of states with different \(j\) such that for each value of \(j\) the value of \(m\) runs from \(-j\) to \(+j\). If the value \(j\) appears \(N(j)\) times, then we obtain the total number of states \(Z(m)\) with a fixed \(m\) from
+
+Footnote 4: This is done for each \(m\) through a unitary matrix \(S(m_{1},j_{2})\). We can calculate it explicitly, cf., e.g., Van der Waerden, Die Gruppentheoretische Methode in der Quantenmechanik, Berlin (1932) Sec. 18. See also H.A. Kramers and H.C. Brinkmann, loc. cit. footnote 6 below.
+
+\[Z(m)=\sum\limits_{i\geq m}N(j)\,.\]
+
+This is valid for \(m\geqslant 0\), to which cases we can restrict ourselves, since the case \(m\leqslant 0\)
