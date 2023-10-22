@@ -1,0 +1,4 @@
+# Instalamos la librería Nougat para procesar los pdf
+from IPython import display
+import os
+!pip install nougat-ocr
