@@ -1,0 +1,41 @@
+Cómo utilizar el OCR
+
+El programa Nougat es una herramienta que permite aplicar OCR a un PDF y generar un resumen del documento.
+
+OCR
+
+Para aplicar OCR a un PDF, siga estos pasos:
+
+Si el PDF está almacenado localmente, súbalo a la carpeta /content/Nougat/Input.
+Si el PDF está almacenado en línea, copie su URL y péguelo en la celda indicada.
+Una vez que haya aplicado OCR al PDF, se creará un archivo .mmd. Para convertir este archivo a PDF conservando el formato, siga estos pasos:
+
+Abra el archivo .mmd en un editor de texto.
+Copie todo el texto dentro del editor de texto.
+Pegue el texto en un editor de LaTeX (recomendamos Overleaf).
+Compilar el código LaTeX y convertirlo en PDF.
+Resumen
+
+Para generar un resumen de un PDF, siga estos pasos:
+
+Coloque el PDF resultante del OCR en la carpeta /content/pdfs.
+Inicie el programa Nougat.
+En la celda indicada, ingrese su API key de OpenAI.
+En la celda indicada, ingrese un prompt para el resumen.
+Ejecute el programa.
+El resumen se guardará en un archivo .txt. Para visualizar el resumen, recomendamos utilizar un programa como WordPad o un lector de PDF.
+
+Preguntas al ROPTA
+
+Para hacer preguntas al ROPTA, siga estos pasos:
+
+En la celda indicada, ingrese la consulta deseada.
+Ejecute el programa.
+El ROPTA responderá a la consulta utilizando la información de los documentos en la carpeta /content/pdfs.
+
+Posibles preguntas para el documento de prueba:
+1. ¿Cuál es la relación entre la mecánica cuántica y la teoría de grupos?
+
+2. ¿Cuál es la relación entre las transformaciones lineales y la teoría de grupos?
+
+Se pueden hacer en inglés
