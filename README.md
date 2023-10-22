@@ -1,5 +1,5 @@
 # Resumen Organizado Para Textos Académicos (ROPTA)
-La información científica al alcance de todos.
+La información científica al alcance de todos.  
 
 Gracias al avance de la tecnología y al interés por la ciencia, la información científica está cada vez más disponible. Sin embargo, la cantidad de información disponible es tan grande que puede ser difícil realizar revisiones o trabajos de forma sencilla. Este desafío se enfrenta a investigadores, estudiantes, profesionales y cualquier persona que necesite acceder a información científica, debido que para realizar una revisión o trabajo de forma adecuada, es necesario leer y entender el contenido de varios documentos o artículos científicos. Esto puede tomar mucho tiempo y esfuerzo, especialmente si la información está dispersa en diferentes fuentes.
 
